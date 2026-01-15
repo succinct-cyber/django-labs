@@ -1,0 +1,14 @@
+<h1>Profile</h1>
+
+<p><strong>Username:</strong> {{ request.user.username }}</p>
+<p><strong>Plan:</strong> {{ subscription.plan }}</p>
+
+{% if subscription.is_active %}
+<p>Status: Active</p>
+{% else %}
+<p>Status: Free</p>
+{% endif %}
+
+
+<a href="{% url 'logout' %}">Logout</a>
+
