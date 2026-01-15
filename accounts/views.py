@@ -59,7 +59,6 @@ def profile_view(request):
         'profile': profile,
     })
 
-
 def logout_view(request):
     logout(request)
     return redirect('login')
