@@ -1,7 +1,11 @@
 # django-labs
 
-This repository contains focused backend experiments built with Django.
+A collection of focused Django projects exploring backend engineering concepts.
 
-Each project explores a specific backend concept commonly used in production systems, including authentication, APIs, and access control.
+Each folder represents an isolated lab covering topics such as:
+- authentication and access control
+- REST APIs
+- subscriptions and permissions
+- backend system design patterns
 
-The goal is to build practical understanding through small, isolated implementations.
+These labs are intentionally small and documented as proof of work.
