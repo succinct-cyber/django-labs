@@ -8,4 +8,15 @@ Each folder represents an isolated lab covering topics such as:
 - subscriptions and permissions
 - backend system design patterns
 
-These labs are intentionally small and documented as proof of work.
+These labs are intentionally small and documented as proof of work
+
+## API (Django REST Framework)
+
+This project exposes an authenticated API endpoint:
+
+- `GET /api/profile/`
+- Requires login
+- Returns basic user identity data
+
+This mirrors how backend services expose user data to frontends and dashboards.
+
