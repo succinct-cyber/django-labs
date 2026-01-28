@@ -10,8 +10,6 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework import status
-from payments.models import Subscription
-from .serializers import WalletSerializer
 
 
 def home(request):
@@ -46,7 +44,7 @@ def login_view(request):
 
 @login_required
 def dashboard(request):
-    subscription, created = Subscription.objects.get_or_create(
+    subscription, created = subscription.objects.get_or_create(
         user=request.user
     )
 
